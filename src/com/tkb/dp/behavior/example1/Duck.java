@@ -14,11 +14,18 @@ public abstract class Duck {
     public QuackBehavior quackBehavior;
 
     public void performFly(){
-        flyBehavior.fly();
+        if (flyBehavior != null)
+            flyBehavior.fly();
+        else
+            System.out.println("Please set your fly behavior");
     }
 
     public void performQuack(){
-        quackBehavior.quack();
+        if (quackBehavior != null){
+            quackBehavior.quack();
+        }else {
+            System.out.println("Please set your quack behavior");
+        }
     }
 
     public void setFlyBehavior(FlyBehavior flyBehavior){
