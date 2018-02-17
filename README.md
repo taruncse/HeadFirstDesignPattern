@@ -8,9 +8,9 @@ https://github.com/taruncse/DesignPatternsExperiment#strategy-design-pattern-
 **A game on Duck**
 
 **Feature:** The game can show a large variety of duck species swimming and making quacking sounds.
- *	Duck will make sound (but not all duck)
- *  Duck will fly (but not all duck)
- *  Duck will have it’s own outlook.
+ *	Duck will make sound (but not all duck) [changeable part]
+ *  Duck will fly (but not all duck) [changeable part]
+ *  Duck will have it’s own look.
  *  Duck will swim.
 
 **Design Principles:**
