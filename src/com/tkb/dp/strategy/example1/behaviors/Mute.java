@@ -1,6 +1,6 @@
-package com.tkb.dp.behavior.example1.behaviors;
+package com.tkb.dp.strategy.example1.behaviors;
 
-import com.tkb.dp.behavior.example1.behaviorInterface.QuackBehavior;
+import com.tkb.dp.strategy.example1.interfaces.QuackBehavior;
 
 public class Mute implements QuackBehavior {
     @Override

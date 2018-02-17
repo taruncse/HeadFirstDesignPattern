@@ -1,11 +1,11 @@
 package com.tkb.dp;
 
-import com.tkb.dp.behavior.example1.Duck;
-import com.tkb.dp.behavior.example1.behaviors.FlyWithRocket;
-import com.tkb.dp.behavior.example1.behaviors.FlyWithWings;
-import com.tkb.dp.behavior.example1.behaviors.Quack;
-import com.tkb.dp.behavior.example1.duck.RedheadDuck;
-import com.tkb.dp.behavior.example1.duck.RubberDuck;
+import com.tkb.dp.strategy.example1.Duck;
+import com.tkb.dp.strategy.example1.behaviors.FlyWithRocket;
+import com.tkb.dp.strategy.example1.behaviors.FlyWithWings;
+import com.tkb.dp.strategy.example1.behaviors.Quack;
+import com.tkb.dp.strategy.example1.duck.RedheadDuck;
+import com.tkb.dp.strategy.example1.duck.RubberDuck;
 
 public class Main {
 

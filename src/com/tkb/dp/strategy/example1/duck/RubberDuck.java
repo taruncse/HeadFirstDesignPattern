@@ -1,8 +1,8 @@
-package com.tkb.dp.behavior.example1.duck;
+package com.tkb.dp.strategy.example1.duck;
 
-import com.tkb.dp.behavior.example1.Duck;
-import com.tkb.dp.behavior.example1.behaviors.FlyNoWay;
-import com.tkb.dp.behavior.example1.behaviors.Squeak;
+import com.tkb.dp.strategy.example1.Duck;
+import com.tkb.dp.strategy.example1.behaviors.FlyNoWay;
+import com.tkb.dp.strategy.example1.behaviors.Squeak;
 
 public class RubberDuck extends Duck {
 

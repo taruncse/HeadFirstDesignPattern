@@ -1,7 +1,7 @@
-package com.tkb.dp.behavior.example1;
+package com.tkb.dp.strategy.example1;
 
-import com.tkb.dp.behavior.example1.behaviorInterface.FlyBehavior;
-import com.tkb.dp.behavior.example1.behaviorInterface.QuackBehavior;
+import com.tkb.dp.strategy.example1.interfaces.FlyBehavior;
+import com.tkb.dp.strategy.example1.interfaces.QuackBehavior;
 
 public abstract class Duck {
     public abstract void display();
@@ -17,14 +17,14 @@ public abstract class Duck {
         if (flyBehavior != null)
             flyBehavior.fly();
         else
-            System.out.println("Please set your fly behavior");
+            System.out.println("Please set your fly strategy");
     }
 
     public void performQuack(){
         if (quackBehavior != null){
             quackBehavior.quack();
         }else {
-            System.out.println("Please set your quack behavior");
+            System.out.println("Please set your quack strategy");
         }
     }
 

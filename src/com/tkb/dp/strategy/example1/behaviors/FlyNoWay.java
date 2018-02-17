@@ -1,6 +1,6 @@
-package com.tkb.dp.behavior.example1.behaviors;
+package com.tkb.dp.strategy.example1.behaviors;
 
-import com.tkb.dp.behavior.example1.behaviorInterface.FlyBehavior;
+import com.tkb.dp.strategy.example1.interfaces.FlyBehavior;
 
 public class FlyNoWay implements FlyBehavior {
     @Override
