@@ -8,10 +8,12 @@ public abstract class HandSet {
 
     public Photography photography;
 
+    //Setting Behavior Dynamically
     /*public void setPhotographyDevice(Photography photography){
         this.photography = photography;
     }*/
 
+    //Implement the Methods for the New Behavior
     public void takePhoto(String location){
         if (photography == null){
             System.out.println("You have no camera to take photo");
@@ -20,6 +22,7 @@ public abstract class HandSet {
         }
     }
 
+    //Implement the Methods for the New Behavior
     public void takeVideo(String location){
         if (photography == null){
             System.out.println("You have no camera to take video");

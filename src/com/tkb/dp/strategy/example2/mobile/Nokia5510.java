@@ -2,6 +2,9 @@ package com.tkb.dp.strategy.example2.mobile;
 
 import com.tkb.dp.strategy.example2.HandSet;
 
+/**
+ *  Implement Concrete Classes from the Strategy
+ */
 public class Nokia5510 extends HandSet{
     @Override
     public void display() {
