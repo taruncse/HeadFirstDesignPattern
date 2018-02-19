@@ -9,9 +9,9 @@ public abstract class HandSet {
     public Photography photography;
 
     //Setting Behavior Dynamically
-    /*public void setPhotographyDevice(Photography photography){
+    public void setPhotographyDevice(Photography photography){
         this.photography = photography;
-    }*/
+    }
 
     //Implement the Methods for the New Behavior
     public void takePhoto(String location){

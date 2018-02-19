@@ -17,11 +17,11 @@ public class NokiaLumia920 extends HandSet{
         return "NokiaLumia920";
     }
     //Setting Behavior Dynamically
-    public void setFrontCamera(){
+    /*public void setFrontCamera(){
         photography = new FrontCamera();
     }
     //Setting Behavior Dynamically
     public void setBackCamera(){
         photography = new BackCamera();
-    }
+    }*/
 }

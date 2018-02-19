@@ -7,6 +7,9 @@ import com.tkb.dp.strategy.example1.behaviors.Quack;
 import com.tkb.dp.strategy.example1.duck.RedheadDuck;
 import com.tkb.dp.strategy.example1.duck.RubberDuck;
 import com.tkb.dp.strategy.example2.HandSet;
+import com.tkb.dp.strategy.example2.camera.BackCamera;
+import com.tkb.dp.strategy.example2.camera.FrontCamera;
+import com.tkb.dp.strategy.example2.camera.NoCamera;
 import com.tkb.dp.strategy.example2.mobile.Nokia5510;
 import com.tkb.dp.strategy.example2.mobile.NokiaLumia920;
 
@@ -17,9 +20,11 @@ public class Main {
         //handSet.set
         nokia5510.takePhoto("Memory Card");
         nokia5510.sendSms("017777","Hi how are you?");
+        nokia5510.setPhotographyDevice(new NoCamera());
+        nokia5510.takePhoto("Memory Card");
 
         NokiaLumia920 nokiaLumia920 = new NokiaLumia920();
-        nokiaLumia920.setFrontCamera();
+        nokiaLumia920.setPhotographyDevice(new FrontCamera());
         nokiaLumia920.takePhoto("Rom");
 
     }
