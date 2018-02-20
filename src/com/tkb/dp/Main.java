@@ -1,5 +1,7 @@
 package com.tkb.dp;
 
+import com.tkb.dp.observer.example1.observer.CurrentConditionsDisplay;
+import com.tkb.dp.observer.example1.subject.WeatherData;
 import com.tkb.dp.strategy.example1.Duck;
 import com.tkb.dp.strategy.example1.behaviors.FlyWithRocket;
 import com.tkb.dp.strategy.example1.behaviors.FlyWithWings;
@@ -15,6 +17,16 @@ import com.tkb.dp.strategy.example2.mobile.NokiaLumia920;
 
 public class Main {
 
+    //Observer
+    public static void main(String[] args) {
+        WeatherData weatherData = new WeatherData();
+        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        weatherData.setMeasurements(10,50,86);
+
+    }
+    /*
+    Strategy
+
     public static void main(String[] args) {
         HandSet nokia5510 = new Nokia5510();
         //handSet.set
@@ -29,7 +41,7 @@ public class Main {
 
     }
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Duck rubberDuck = new RubberDuck();
         rubberDuck.display();
         rubberDuck.performFly();
