@@ -1,18 +1,41 @@
 package com.tkb.dp;
 
+import com.tkb.dp.decorator.Beverage;
+import com.tkb.dp.decorator.Espresso;
+import com.tkb.dp.decorator.HouseholdBlend;
+import com.tkb.dp.decorator.Mocha;
 import com.tkb.dp.observer.example2JavaObserver.CurrentConditionsDisplay;
 import com.tkb.dp.observer.example2JavaObserver.WeatherData;
 import com.tkb.dp.observer.swing.SwingObserverExample;
 
 public class Main {
 
+
+
+    //Decorator
+
+    public static void main(String[] args) {
+
+        Beverage beverage = new Espresso();
+        System.out.println(beverage.getDescription()+" and Cost "+beverage.cost());
+
+        Beverage beverage1 = new HouseholdBlend();
+        beverage1 = new Mocha(beverage1);
+
+        System.out.println(beverage1.getDescription()+" and Cost "+beverage1.cost());
+
+
+    }
+
+
+    /*
     //Observer
 
     public static void main(String[] args) {
         new SwingObserverExample().go();
 
     }
-    /*
+
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
