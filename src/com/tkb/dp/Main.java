@@ -1,31 +1,25 @@
 package com.tkb.dp;
 
-import com.tkb.dp.observer.example1.observer.StatisticsDisplay;
 import com.tkb.dp.observer.example2JavaObserver.CurrentConditionsDisplay;
 import com.tkb.dp.observer.example2JavaObserver.WeatherData;
-import com.tkb.dp.strategy.example1.Duck;
-import com.tkb.dp.strategy.example1.behaviors.FlyWithRocket;
-import com.tkb.dp.strategy.example1.behaviors.FlyWithWings;
-import com.tkb.dp.strategy.example1.behaviors.Quack;
-import com.tkb.dp.strategy.example1.duck.RedheadDuck;
-import com.tkb.dp.strategy.example1.duck.RubberDuck;
-import com.tkb.dp.strategy.example2.HandSet;
-import com.tkb.dp.strategy.example2.camera.BackCamera;
-import com.tkb.dp.strategy.example2.camera.FrontCamera;
-import com.tkb.dp.strategy.example2.camera.NoCamera;
-import com.tkb.dp.strategy.example2.mobile.Nokia5510;
-import com.tkb.dp.strategy.example2.mobile.NokiaLumia920;
-import com.tkb.dp.observer.example2JavaObserver.WeatherData.*;
+import com.tkb.dp.observer.swing.SwingObserverExample;
+
 public class Main {
 
     //Observer
+
+    public static void main(String[] args) {
+        new SwingObserverExample().go();
+
+    }
+    /*
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
         weatherData.setMeasurements(30,40,60);
 
     }
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
