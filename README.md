@@ -82,6 +82,7 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 Objects Use this interface to register observers sandals to remove themselves from being observers. Each subject can have many observers.
 
 **Observer:**
+
  All potential observers need to implement the Observer interface.This interface just has one method, update(), that gets called when the Subject’s state changes.
  
 **Concrete Subject:**
@@ -94,6 +95,7 @@ Concrete observers can be any class that implements the Observer interface.  Eac
 
 
 **The Weather Monitoring application overview:**
+
 The three players in the system are the weather station (the physical device that acquires the actual weather data), the WeatherData object (that tracks the data coming from the Weather Station and updates the displays), and the display that shows users the current weather conditions.
 
 The WeatherData object knows how to talk to the physical Weather Station, to get updated data. The WeatherData object then updates its displays for the three different display elements: Current Conditions (shows temperature, humidity, and pressure), Weather Statistics, and a simple forecast.
@@ -101,8 +103,9 @@ The WeatherData object knows how to talk to the physical Weather Station, to get
 Our job, if we choose to accept it, is to create an app that uses the WeatherData object to update three displays for 
 current conditions, weather stats, and a forecast. 
 
-**Implementation: **
-** Please the source code **
+**Implementation:**
+
+**Please the source code**
 
 **Design Principal:**
 Strive For loosely coupled designs between objects that interact
