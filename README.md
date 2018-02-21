@@ -116,15 +116,15 @@ As we all know, there can be different types of mobile devices. Old (and cheapes
 
  **Design Principle: How Observer pattern follow the design principala**
 
- **Identify the aspects of your application that vary and separate them from what stays the same.**
+* **Identify the aspects of your application that vary and separate them from what stays the same.**
 
   Ans: The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers.   With this pattern, you can  vary the objects that are dependent on the state of the Subject, without having to change that Subject.   That’s called planning ahead!
 
- **Design Principle: *Program to an interface, not an implementation.**
+* **Design Principle: Program to an interface, not an implementation.**
 
  Ans: Both the Subject and Observer use interfaces.  The Subject keeps track of objects implement-ing the Observer interface, while the observers register with, and get notified by, the Subject interface.  As we’ve seen, this keeps things nice and loosely coupled.
 
- **Design Principle: *Favor composition over inheritance.**
+* **Design Principle: *Favor composition over inheritance.**
 
  Ans: The Observer Pattern uses composition to compose any number of Observers with their Subjects.  These relationships aren’t set up by some kind of inheritance hierarchy.  No, they are set up at runtime by composition!
 
