@@ -130,14 +130,14 @@ As we all know, there can be different types of mobile devices. Old (and cheapes
 
 **The dark side of java.util.Observable:**
 
-There are some demerits of using default Java observer pattern.
-Observable is a class, not an interface, and worse, it doesn’t even implement an interface. Unfortunately, the java.util.Observable implementation has a number of problems that limit its usefulness and reuse.
+  There are some demerits of using default Java observer pattern.
+  Observable is a class, not an interface, and worse, it doesn’t even implement an interface. Unfortunately, the java.util.Observable implementation has a number of problems that limit its usefulness and reuse.
 
- **Observable is a class:**
+* **Observable is a class:**
 
- You already know from our principles this is a bad idea, but what harm does it really cause? First, because Observable is a class, you have to subclass it. That means you can’t add on the Observable behavior to an existing class that already extends another superclass.
+   You already know from our principles this is a bad idea, but what harm does it really cause? First, because Observable is a class, you have to subclass it. That means you can’t add on the Observable behavior to an existing class that already extends another superclass.
 
- If you look at the Observable API, the setChanged() method is protected. So what?  Well, this means you can’t call setChanged() unless you’ve subclassed Observable.
+   If you look at the Observable API, the setChanged() method is protected. So what?  Well, this means you can’t call setChanged() unless you’ve subclassed Observable.
 
  ***BULLET POINTS***
 
