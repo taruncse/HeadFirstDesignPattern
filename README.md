@@ -77,18 +77,18 @@ Now we have our Strategy (i.e. Handset abstract class) is ready, it's time to cr
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically. It has following parts.
 
-*Subject:*
+**Subject:**
 
 Objects Use this interface to register observers sandals to remove themselves from being observers. Each subject can have many observers.
 
-*Observer:*
+**Observer:**
  All potential observers need to implement the Observer interface.This interface just has one method, update(), that gets called when the Subject’s state changes.
  
-*Concrete Subject:*
+**Concrete Subject:**
 
 A concrete subject always implements the Subject interface.  In addition to the register and remove methods, the concrete subject  implements a notifyObservers() method that is used to update all the current observers whenever state changes. The concrete subject may also have methods for setting and getting its state.
 
-*Concrete Observer :*
+**Concrete Observer :**
 
 Concrete observers can be any class that implements the Observer interface.  Each observer registers with a concrete subject to receive updates.
 
@@ -102,7 +102,7 @@ Our job, if we choose to accept it, is to create an app that uses the WeatherDat
 current conditions, weather stats, and a forecast. 
 
 **Implementation: **
-*Please the source code*
+** Please the source code **
 
 **Design Principal:**
 Strive For loosely coupled designs between objects that interact
@@ -111,7 +111,7 @@ Loosely coupled designs allow us to build flexible *OO* systems that can handle 
 
 **Design Principle: How Observer pattern follow the design principala**
 
-*Identify the aspects of your application that vary and separate them from what stays the same.* 
+**Identify the aspects of your application that vary and separate them from what stays the same.**
 
  Ans: The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers.   With this pattern, you can  vary the objects that are dependent on the state of the Subject, without having to change that Subject.   That’s called planning ahead!
 
@@ -128,7 +128,7 @@ Ans: The Observer Pattern uses composition to compose any number of Observers wi
 There are some demerits of using default Java observer pattern.
 Observable is a class, not an interface, and worse, it doesn’t even implement an interface. Unfortunately, the java.util.Observable implementation has a number of problems that limit its usefulness and reuse.
 
-*Observable is a class:*
+**Observable is a class:**
 
 You already know from our principles this is a bad idea, but what harm does it really cause? First, because Observable is a class, you have to subclass it. That means you can’t add on the Observable behavior to an existing class that already extends another superclass.
 
