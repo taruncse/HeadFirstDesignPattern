@@ -1,6 +1,6 @@
 # HeadFirstDesignPattern
 
-## Terms must know before staring:
+## Terms must know before starting:
  
  * Inheritance
  * Polymorphism
