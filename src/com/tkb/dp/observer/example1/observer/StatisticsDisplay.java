@@ -3,7 +3,7 @@ package com.tkb.dp.observer.example1.observer;
 import com.tkb.dp.observer.example1.interfaces.DisplayElement;
 import com.tkb.dp.observer.example1.interfaces.Observer;
 import com.tkb.dp.observer.example1.interfaces.Subject;
-
+// This is concrete observer
 public class StatisticsDisplay implements Observer, DisplayElement {
 
     float temperature, humidity,pressure;

@@ -3,7 +3,7 @@ package com.tkb.dp.observer.example1.observer;
 import com.tkb.dp.observer.example1.interfaces.DisplayElement;
 import com.tkb.dp.observer.example1.interfaces.Observer;
 import com.tkb.dp.observer.example1.interfaces.Subject;
-
+// This is concrete observer
 public class ThirdPartyDisplay implements Observer, DisplayElement{
     float temperature, humidity,pressure;
 
@@ -12,7 +12,7 @@ public class ThirdPartyDisplay implements Observer, DisplayElement{
     }
     @Override
     public void display() {
-        System.out.println("StatisticsDisplay Current conditions: " + temperature + "F degrees and " + humidity + "% humidity");
+        System.out.println("ThirdPartyDisplay Current conditions: " + temperature + "F degrees and " + humidity + "% humidity");
 
     }
 

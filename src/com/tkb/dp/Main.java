@@ -1,7 +1,8 @@
 package com.tkb.dp;
 
-import com.tkb.dp.observer.example1.observer.CurrentConditionsDisplay;
+import com.tkb.dp.observer.example1.observer.StatisticsDisplay;
 import com.tkb.dp.observer.example1.subject.WeatherData;
+import com.tkb.dp.observer.example2JavaObserver.CurrentConditionsDisplay;
 import com.tkb.dp.strategy.example1.Duck;
 import com.tkb.dp.strategy.example1.behaviors.FlyWithRocket;
 import com.tkb.dp.strategy.example1.behaviors.FlyWithWings;
@@ -19,11 +20,20 @@ public class Main {
 
     //Observer
     public static void main(String[] args) {
-        WeatherData weatherData = new WeatherData();
+        com.tkb.dp.observer.example2JavaObserver.WeatherData weatherData = new com.tkb.dp.observer.example2JavaObserver.WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
-        weatherData.setMeasurements(10,50,86);
+        weatherData.setMeasurements(30,40,60);
 
     }
+    /*public static void main(String[] args) {
+        WeatherData weatherData = new WeatherData();
+        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
+        weatherData.setMeasurements(10,50,86);
+
+        weatherData.remove(currentConditionsDisplay);
+        weatherData.setMeasurements(14,51,76);
+    }*/
     /*
     Strategy
 

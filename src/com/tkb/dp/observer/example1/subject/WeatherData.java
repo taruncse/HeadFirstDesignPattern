@@ -4,6 +4,7 @@ import com.tkb.dp.observer.example1.interfaces.Observer;
 import com.tkb.dp.observer.example1.interfaces.Subject;
 
 import java.util.ArrayList;
+// This is Concrete Subject.
 
 public class WeatherData implements Subject {
     private ArrayList<Observer> observers;
