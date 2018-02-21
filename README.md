@@ -151,4 +151,5 @@ As we all know, there can be different types of mobile devices. Old (and cheapes
  * Don’t be afraid to create your own Observable implementation if needed. 
  * Swing makes heavy use of the Observer Pattern, as do many GUI frameworks. 
  * You’ll also find the pattern in many other places, including JavaBeans and RMI.
+ * Android view (button) click listener can be the most used example of Observer Pattern.
 
