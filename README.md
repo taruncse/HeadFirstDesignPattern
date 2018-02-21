@@ -1,6 +1,6 @@
 # HeadFirstDesignPattern
 
-### Strategy Pattern
+## Strategy Pattern
 https://github.com/taruncse/DesignPatternsExperiment#strategy-design-pattern-
 
 ### Strategy Pattern Example1:
@@ -70,7 +70,9 @@ Here is the beauty of Strategy pattern wherein you can change the behavior dynam
 
 Now we have our Strategy (i.e. Handset abstract class) is ready, it's time to create concrete classes.
 
-### Observer Pattern:
+
+
+## Observer Pattern:
 **URL:** https://github.com/taruncse/DesignPatternsExperiment#observer-design-pattern-
 
 **Defination:**
