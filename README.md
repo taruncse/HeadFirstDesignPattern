@@ -1,5 +1,13 @@
 # HeadFirstDesignPattern
 
+## Terms must know before staring:
+ 
+ * Inheritance
+ * Polymorphism
+ * Composition
+ * Abstraction 
+ * Encapsulation
+
 ## Strategy Pattern
 https://github.com/taruncse/DesignPatternsExperiment#strategy-design-pattern-
 
