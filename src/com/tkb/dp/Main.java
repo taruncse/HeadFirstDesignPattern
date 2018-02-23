@@ -1,9 +1,6 @@
 package com.tkb.dp;
 
-import com.tkb.dp.decorator.*;
-import com.tkb.dp.observer.example2JavaObserver.CurrentConditionsDisplay;
-import com.tkb.dp.observer.example2JavaObserver.WeatherData;
-import com.tkb.dp.observer.swing.SwingObserverExample;
+import com.tkb.dp.decorator.example1.*;
 
 public class Main {
 
@@ -19,8 +16,13 @@ public class Main {
         Beverage beverage1 = new HouseholdBlend();
         beverage1 = new Mocha(beverage1);
         beverage1 = new Whip(beverage1);
-
         System.out.println(beverage1.getDescription()+" and Cost "+beverage1.cost());
+
+        Beverage beverage2 = new Espresso();
+        beverage2.setSize(Beverage.MEDIUM);
+        beverage2 = new Soy(beverage2);
+
+        System.out.println(beverage2.getDescription()+" and Cost "+beverage2.cost());
 
 
     }

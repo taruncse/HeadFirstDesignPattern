@@ -1,4 +1,4 @@
-package com.tkb.dp.decorator;
+package com.tkb.dp.decorator.example1;
 
 public class HouseholdBlend extends Beverage{
 
