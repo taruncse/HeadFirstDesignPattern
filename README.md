@@ -170,8 +170,8 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 
 **Coffee shop example overview**
 
-* The example is showin how can we process an order in a coffee shop. 
-* Want to offer a variety of combina5ons of coffee and condiments 
+* The example is showing how can we process an order in a coffee shop. 
+* Want to offer a variety of combinations of coffee and condiments 
 * Cost of a cup depends on the combination that was ordered .
 
 **Implementation:**
