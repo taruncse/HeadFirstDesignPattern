@@ -161,3 +161,35 @@ As we all know, there can be different types of mobile devices. Old (and cheapes
  * You’ll also find the pattern in many other places, including JavaBeans and RMI.
  * Android view (button) click listener can be the most used example of Observer Pattern.
 
+
+## Decorator pattern:
+
+The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+**URL** https://github.com/taruncse/DesignPatternsExperiment#decorator-design-pattern-
+
+**Coffee shop example overview**
+
+* The example is showin how can we process an order in a coffee shop. 
+* Want to offer a variety of combina5ons of coffee and condiments 
+* Cost of a cup depends on the combination that was ordered .
+
+**Implementation:**
+
+**Please look into the source code**
+
+**Design Principle:**
+ Classes should be open for extension, but closed for modification.
+ 
+**Some bullet points:**
+
+ * Decorators have the same super type as the objects they decorate. 
+ * You can use one or more decorators to wrap an object. 
+ * Given that the decorator has the same super type as the object it decorates, we can pass around a decorated object in  place of the original (wrapped) object. 
+ * The decorator adds its own behavior either before and/or after delegating to the object it decorates to do the rest of the job. (Key Point)
+ * Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators as we like. 
+
+
+
+
+
