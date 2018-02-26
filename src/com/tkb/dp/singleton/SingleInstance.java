@@ -2,7 +2,7 @@ package com.tkb.dp.singleton;
 
 public class SingleInstance {
 
-    private static SingleInstance singleInstance;
+    private static volatile SingleInstance singleInstance;
 
     private SingleInstance(){
 
@@ -10,7 +10,11 @@ public class SingleInstance {
 
     public static SingleInstance getSingleInstance() {
         if (singleInstance == null)
-            singleInstance = new SingleInstance();
+            synchronized (SingleInstance.class){
+              if (singleInstance == null){
+                  singleInstance = new SingleInstance();
+              }
+            }
         return singleInstance;
     }
 }
