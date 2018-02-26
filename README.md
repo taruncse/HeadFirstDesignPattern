@@ -203,7 +203,32 @@ they decorate, either through inheritance or interface implementation.)
  * You can wrap a component with any number of decorators. 
  * Decorators are typically transparent to the client of the component; that is, unless the client is relying on the component’s concrete type. 
  * Decorators can result in many small objects in our design, and overuse can be complex. 
+ 
+ 
+ 
+ ## Singleton Pattern:
+ 
+ The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it
 
+**Url: https://github.com/taruncse/DesignPatternsExperiment#singleton-design-pattern-**
+
+**Rumors of Singletons being eaten by the garbage collectors are greatly exaggerated**
+
+This leads to confusing bugs because after the Singleton is “collected,” the next call to getInstance() produced a shiny new Singleton.n many applications, this can cause confusing behavior as state is mysteriously reset to initial values or things like network connections are reset. Since Java 1.2 this bug has been fixed and a global reference is no longer required.
+
+**Bullet Points**
+
+* The Singleton Pattern ensures you have at most one instance of a class in your application. 
+* The Singleton Pattern also provides a global access point to that instance. 
+* Java’s implementation of the Singleton Pattern makes use of a private constructor, a static method combined with  a static variable.
+* Examine your performance and resource constraints and carefully choose an appropriate Singleton implementation for  multithreaded applications (and we should consider all applications multithreaded!).
+* Beware of the double-checked locking implementation; it is not thread-safe in versions before Java 2, version 5.
+* Be careful if you are using multiple class loaders; this could defeat the Singleton implementation and result in multiple instances.
+* If you are using a JVM earlier than 1.2, you’ll need to create a registry of Singletons to defeat the garbage collector.
+
+**Design Principal**
+
+Singleton- Ensurea class only has one instanceand provide a global point of accessto it. 
 
 
 
