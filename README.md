@@ -214,7 +214,7 @@ they decorate, either through inheritance or interface implementation.)
 
 **Rumors of Singletons being eaten by the garbage collectors are greatly exaggerated**
 
-This leads to confusing bugs because after the Singleton is “collected,” the next call to getInstance() produced a shiny new Singleton.n many applications, this can cause confusing behavior as state is mysteriously reset to initial values or things like network connections are reset. Since Java 1.2 this bug has been fixed and a global reference is no longer required.
+This leads to confusing bugs because after the Singleton is “collected,” the next call to getInstance() produced a shiny new Singleton.In many applications, this can cause confusing behavior as state is mysteriously reset to initial values or things like network connections are reset. Since Java 1.2 this bug has been fixed and a global reference is no longer required.
 
 **Bullet Points**
 
