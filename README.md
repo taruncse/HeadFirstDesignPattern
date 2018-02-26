@@ -179,6 +179,7 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 **Please look into the source code**
 
 **Design Principle:**
+
  Classes should be open for extension, but closed for modification.
  
 **What we know so far:**
