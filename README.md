@@ -205,7 +205,6 @@ they decorate, either through inheritance or interface implementation.)
  * Decorators can result in many small objects in our design, and overuse can be complex. 
  
  
- 
  ## Singleton Pattern:
  
  The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it
@@ -228,7 +227,7 @@ This leads to confusing bugs because after the Singleton is “collected,” the
 
 **Design Principal**
 
-Singleton- Ensurea class only has one instanceand provide a global point of accessto it. 
+Singleton Ensurea class only has one instanceand provide a global point of accessto it. 
 
 
 
